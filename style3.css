@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background-image: url(./backround\ image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:650px){
+#navbar {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+}
+
+#ebook {
+    margin: 0;
+    font-family: "Righteous";
+    font-size: 25px;
+    color: white;
+}
+
+#navbar a {
+    color: rgb(253, 253, 253);
+    font-family: "Merienda";
+    font-size: 18px;
+    padding: 10px;
+}
+
+#navbar a:hover{
+    color: yellow;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    height: auto;
+    font-family: "Merienda";
+    color: white;
+
+}
+
+#mycarousel {
+    display: inline-block;
+    height: 520px;
+    width: 400px;
+
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon .carousel-control-next-icon {
+    background-color: black;
+}
+
+#button {
+    background-color: rgba(255, 255, 255, 0.027);
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(210, 224, 3);
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+}
+
+#button:hover{
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 12px;
+    color: white;
+    font-family: "Merienda";
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
